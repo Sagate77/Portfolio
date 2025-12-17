@@ -1,0 +1,278 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+  background-color: #1a1a1a;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1em 2em;
+  box-shadow: 0 2px 10px rgba(0, 255, 204, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00ffcc;
+}
+
+/* Section layout */
+section {
+  padding: 100px 5% 50px;
+  min-height: 100vh;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+h1, h2 {
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+/* Accueil */
+#accueil {
+  text-align: center;
+}
+
+#accueil .photo {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #00ffcc;
+  margin: 20px auto;
+  transition: transform 0.3s;
+}
+
+#accueil .photo:hover {
+  transform: scale(1.05);
+}
+
+/* Images et vidéos */
+.image-projet {
+  max-width: 20%;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
+  transition: transform 0.3s;
+}
+
+.image-projet:hover {
+  transform: scale(1.02);
+}
+
+
+
+.imageUI {
+  max-width: 50%;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
+  transition: transform 0.3s;
+}
+
+.imageUI:hover {
+  transform: scale(1.02);
+}
+
+
+.imageDev {
+  max-width: 80%;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
+  transition: transform 0.3s;
+}
+
+.imageDev:hover {
+  transform: scale(1.02);
+}
+
+.video {
+  max-width: 50%;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
+  transition: transform 0.3s;
+}
+
+
+.video:hover {
+  transform: scale(1.02);
+}
+
+/* Formulaire */
+form {
+  background-color: #1e1e1e;
+  padding: 2em;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.1);
+}
+
+form label {
+  margin-top: 1em;
+  display: block;
+  color: #00ffcc;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #2b2b2b;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 1.5em;
+  padding: 10px 15px;
+  background-color: #00ffcc;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #00ddaa;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 1em;
+  color: #888;
+  font-size: 0.9em;
+  border-top: 1px solid #2a2a2a;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 120px 8% 50px;
+  }
+}
+
+
+/* Responsive complément minimal - à ajouter à la fin de ton CSS */
+
+/* Photo accueil responsive */
+@media screen and (max-width: 992px) {
+  #accueil .photo {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #accueil .photo {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #accueil .photo {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Images Design : adaptation taille max-width */
+@media screen and (max-width: 992px) {
+  .image-projet {
+    max-width: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-projet {
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image-projet {
+    max-width: 90%;
+  }
+}
+
+/* Images UI */
+@media screen and (max-width: 600px) {
+  .imageUI {
+    max-width: 90%;
+  }
+}
+
+/* Vidéo */
+@media screen and (max-width: 768px) {
+  .video {
+    max-width: 90%;
+  }
+}
+
+/* Image DevWeb */
+@media screen and (max-width: 768px) {
+  .imageDev {
+    max-width: 90%;
+  }
+}
+
+/* Formulaire */
+@media screen and (max-width: 600px) {
+  form {
+    max-width: 90%;
+    padding: 1.5em 1em;
+  }
+}

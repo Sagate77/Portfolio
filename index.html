@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#design">Design</a></li>
+      <li><a href="#audiovisuel">Audiovisuel</a></li>
+      <li><a href="#devweb">Développement Web</a></li>
+      <li><a href="#ui">Design UI</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Accueil -->
+  <section id="accueil">
+    <h1>Bienvenue sur mon Portfolio</h1>
+    <img src="image/moi.jpg" alt="Ma photo" class="photo" />
+    <p>Bonjour, je suis Kilian Corpet, passionné(e) de création numérique et de développement web.</p>
+  </section>
+
+  <!-- Design -->
+  <section id="design">
+    <h2>Mes Créations Design</h2>
+    <p>Voici mes illustrations et travaux graphiques.</p>
+    <img src="image/bluelock1.png" alt="Design 1" class="image-projet" />
+    <img src="image/bluelock2.png" alt="Design 2" class="image-projet" />
+    <img src="image/bluelock3.png" alt="Design 1" class="image-projet" />
+    <img src="image/bluelock4.png" alt="Design 2" class="image-projet" />
+    <img src="image/cover.png" alt="Design 1" class="image-projet" />
+    <img src="image/Fronte.png" alt="Design 2" class="image-projet" />
+    <img src="image/Mini_Poster.png" alt="Design 1" class="image-projet" />
+    <img src="image/Retro.png" alt="Design 1" class="image-projet" />
+  </section>
+
+  <!-- Audiovisuel -->
+  <section id="audiovisuel">
+    <h2>Projets Audiovisuels</h2>
+    <video controls src="video/SAE104_KilianCorpet_Tuto.mp4" class="video"></video>
+  </section>
+
+  <!-- Développement Web -->
+  <section id="devweb">
+    <h2>Développement Web</h2>
+    <p>Voici un site web BackEnd/FrontEnd :</p>
+    <a href="https://lescantinesvertes.alwaysdata.net/">
+      <img src="image/Connexion.png"Projet web" class="imageDev" />
+    </a>
+  </section>
+
+  <!-- Design UI -->
+  <section id="ui">
+    <h2>Design UI</h2>
+    <p>Voici mes Wireframes pour un projet Ergonomie</p>
+    <img src="image/Wireframe2.png" alt="UI 1" class="imageUI" />
+    <img src="image/Wireframe1.png" alt="UI 2" class="imageUI" />
+    <p>Voici un Design system pour le projet Ergonomie</p>
+    <img src="image/Design System.png" alt="UI 2" class="imageUI" />
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contactez-moi</h2>
+    <form action="php/traitement.php" method="POST">
+      <label for="nom">Nom :</label>
+      <input type="text" name="nom" id="nom" required />
+
+      <label for="email">Email :</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="message">Message :</label>
+      <textarea name="message" id="message" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+  <footer>
+  &copy; 2025 Kilian Corpet – Tous droits réservés
+</footer>
+</body>
+</html>
