@@ -3,87 +3,141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mon Portfolio</title>
+  <title>Portfolio – Kilian Corpet</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-  <!-- Navbar -->
-  <nav>
-    <ul>
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#design">Design</a></li>
-      <li><a href="#audiovisuel">Audiovisuel</a></li>
-      <li><a href="#devweb">Développement Web</a></li>
-      <li><a href="#ui">Design UI</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Accueil -->
-  <section id="accueil">
-    <h1>Bienvenue sur mon Portfolio</h1>
-    <img src="image/moi.jpg" alt="Ma photo" class="photo" />
-    <p>Bonjour, je suis Kilian Corpet, passionné(e) de création numérique et de développement web.</p>
-  </section>
+<nav>
+  <ul>
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#design">Design</a></li>
+    <li><a href="#audiovisuel">Audiovisuel</a></li>
+    <li><a href="#devweb">Développement Web</a></li>
+    <li><a href="#ui">Design UI</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- Design -->
-  <section id="design">
-    <h2>Mes Créations Design</h2>
-    <p>Voici mes illustrations et travaux graphiques.</p>
-    <img src="image/bluelock1.png" alt="Design 1" class="image-projet" />
-    <img src="image/bluelock2.png" alt="Design 2" class="image-projet" />
-    <img src="image/bluelock3.png" alt="Design 1" class="image-projet" />
-    <img src="image/bluelock4.png" alt="Design 2" class="image-projet" />
-    <img src="image/cover.png" alt="Design 1" class="image-projet" />
-    <img src="image/Fronte.png" alt="Design 2" class="image-projet" />
-    <img src="image/Mini_Poster.png" alt="Design 1" class="image-projet" />
-    <img src="image/Retro.png" alt="Design 1" class="image-projet" />
-  </section>
+<!-- Accueil -->
+<section id="accueil">
+  <h1>Bienvenue sur mon Portfolio</h1>
 
-  <!-- Audiovisuel -->
-  <section id="audiovisuel">
-    <h2>Projets Audiovisuels</h2>
-    <video controls src="video/SAE104_KilianCorpet_Tuto.mp4" class="video"></video>
-  </section>
+  <img src="image/moi.jpg" alt="Photo de Kilian Corpet" class="photo" />
 
-  <!-- Développement Web -->
-  <section id="devweb">
-    <h2>Développement Web</h2>
-    <p>Voici un site web BackEnd/FrontEnd :</p>
-    <a href="https://lescantinesvertes.alwaysdata.net/">
-      <img src="image/Connexion.png"Projet web" class="imageDev" />
+  <div class="presentation">
+    <h2>Kilian Corpet</h2>
+    <p class="metier">Développeur Web</p>
+
+    <p>
+      Étudiant passionné par le développement web et la création numérique,
+      je conçois des interfaces modernes, accessibles et centrées sur l’utilisateur.
+    </p>
+
+    <p>
+      Je travaille aussi bien en <strong>front-end</strong> (HTML, CSS, UI/UX)
+      qu’en <strong>back-end</strong> (PHP, bases de données),
+      avec une attention particulière portée à la qualité du code.
+    </p>
+  </div>
+</section>
+
+<!-- Design -->
+<section id="design">
+  <h2>Projets Design</h2>
+
+  <div class="projet">
+    <div class="projet-media">
+      <img src="image/bluelock1.png" alt="Design Blue Lock">
+      <img src="image/bluelock2.png" alt="Affiche graphique">
+      <img src="image/cover.png" alt="Cover design">
+      <img src="image/bluelock3.png" alt="Cover design">
+    </div>
+
+    <div class="projet-texte">
+      <h3>Travaux Graphiques</h3>
+      <p><strong>Contexte :</strong> Projets personnels et académiques en design graphique.</p>
+      <p><strong>Démarche :</strong> Recherche visuelle, cohérence graphique et hiérarchie de l’information.</p>
+      <p><strong>Compétences :</strong> Illustrator, typographie, composition, branding.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Audiovisuel -->
+<section id="audiovisuel">
+  <h2>Projet Audiovisuel</h2>
+
+  <div class="projet">
+    <video controls src="video/SAE104_KilianCorpet_Tuto.mp4"></video>
+
+    <div class="projet-texte">
+      <h3>Tutoriel Vidéo</h3>
+      <p><strong>Contexte :</strong> Projet pédagogique de création audiovisuelle.</p>
+      <p><strong>Difficultés :</strong> Montage, rythme et clarté du discours.</p>
+      <p><strong>Compétences :</strong> Montage vidéo, scénarisation, pédagogie.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Développement Web -->
+<section id="devweb">
+  <h2>Développement Web</h2>
+
+  <div class="Dev">
+    <a href="https://lescantinesvertes.alwaysdata.net/" target="_blank">
+      <img src="image/Connexion.png" alt="">
     </a>
-  </section>
 
-  <!-- Design UI -->
-  <section id="ui">
-    <h2>Design UI</h2>
-    <p>Voici mes Wireframes pour un projet Ergonomie</p>
-    <img src="image/Wireframe2.png" alt="UI 1" class="imageUI" />
-    <img src="image/Wireframe1.png" alt="UI 2" class="imageUI" />
-    <p>Voici un Design system pour le projet Ergonomie</p>
-    <img src="image/Design System.png" alt="UI 2" class="imageUI" />
+    <div class="Dev-texte">
+      <h3>Les Cantines Vertes</h3>
+      <p><strong>Contexte :</strong> Site web complet front-end / back-end.</p>
+      <p><strong>Difficultés :</strong> Sécurité, formulaires, base de données.</p>
+      <p><strong>Compétences :</strong> HTML, CSS, PHP, MySQL.</p>
+    </div>
+  </div>
+</section>
 
-  </section>
+<!-- Design UI -->
+<section id="ui">
+  <h2>Design UI / UX</h2>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contactez-moi</h2>
-    <form action="php/traitement.php" method="POST">
-      <label for="nom">Nom :</label>
-      <input type="text" name="nom" id="nom" required />
+  <div class="projet">
+    <div class="projet-media">
+      <img src="image/Wireframe1.png" alt="Wireframe">
+      <img src="image/Wireframe2.png" alt="Wireframe">
+      <img src="image/Design System.png" alt="Design System">
+    </div>
 
-      <label for="email">Email :</label>
-      <input type="email" name="email" id="email" required />
+    <div class="projet-texte">
+      <h3>Projet Ergonomie</h3>
+      <p><strong>Contexte :</strong> Conception d’un parcours utilisateur.</p>
+      <p><strong>Difficultés :</strong> UX, accessibilité et cohérence visuelle.</p>
+      <p><strong>Compétences :</strong> UX/UI, wireframing, design system.</p>
+    </div>
+  </div>
+</section>
 
-      <label for="message">Message :</label>
-      <textarea name="message" id="message" required></textarea>
+<!-- Contact -->
+<section id="contact">
+  <h2>Contactez-moi</h2>
 
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
-  <footer>
+  <p>
+    Pour toute demande professionnelle ou collaboration, je vous invite à me contacter directement par email ou via LinkedIn.  
+    <br><br>
+    <strong>Email :</strong> <a href="mailto:kiliancorpet@gmail.com">kiliancorpet@gmail.com.com</a><br>
+    <strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/kilian-corpet-00410a298/" >Kilian Corpet</a>
+  </p>
+
+  <p>
+    Je m'efforce de répondre à toutes les demandes dans les plus brefs délais.
+  </p>
+</section>
+
+
+<footer>
   &copy; 2025 Kilian Corpet – Tous droits réservés
 </footer>
+
 </body>
 </html>
